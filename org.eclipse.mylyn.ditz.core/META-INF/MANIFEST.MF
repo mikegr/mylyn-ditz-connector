@@ -14,9 +14,6 @@ Require-Bundle: org.eclipse.mylyn;bundle-version="3.1.1",
  org.eclipse.mylyn.tasks.bugs;bundle-version="3.1.1",
  org.eclipse.mylyn.tasks.core;bundle-version="3.1.1",
  org.eclipse.mylyn.tasks.ui;bundle-version="3.1.1",
- org.eclipse.mylyn.tasks.bugs.source;bundle-version="3.1.1",
- org.eclipse.mylyn.tasks.core.source;bundle-version="3.1.1",
- org.eclipse.mylyn.tasks.ui.source;bundle-version="3.1.1",
  org.eclipse.swt;bundle-version="3.4.2",
  org.eclipse.ui;bundle-version="3.4.2"
 Bundle-ActivationPolicy: lazy
