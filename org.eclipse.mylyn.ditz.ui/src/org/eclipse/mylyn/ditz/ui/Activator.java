@@ -1,4 +1,4 @@
-package org.eclipse.mylyn.ditz.core;
+package org.eclipse.mylyn.ditz.ui;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
@@ -9,13 +9,11 @@ import org.osgi.framework.BundleContext;
 public class Activator extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "org.eclipse.mylyn.ditz.core";
-
-	public static final String REPOSITORY_KIND = "ditz";
+	public static final String PLUGIN_ID = "org.eclipse.mylyn.ditz.ui";
 
 	// The shared instance
 	private static Activator plugin;
-
+	
 	/**
 	 * The constructor
 	 */

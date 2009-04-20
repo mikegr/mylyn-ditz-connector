@@ -4,8 +4,25 @@
    <extension
          point="org.eclipse.mylyn.tasks.ui.repositories">
       <connectorCore
-            class="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector">
+            class="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector"
+            id="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector"
+            name="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector">
       </connectorCore>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.ui.taskRepositoryPageContribution">
+      <taskRepositoryPageContribution
+            class="org.eclipse.mylyn.ditz.core.DitzTaskRepositoryPageContribution"
+            id="org.eclipse.mylyn.ditz.core.taskRepositoryPageContribution1">
+      </taskRepositoryPageContribution>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.core.templates">
+      <repository
+            label="ditzTemplate"
+            repositoryKind="ditzTemplate"
+            urlRepository="test">
+      </repository>
    </extension>
 
 </plugin>
