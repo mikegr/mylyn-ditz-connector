@@ -8,6 +8,8 @@
             id="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector"
             name="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector">
       </connectorCore>
+      <connectorUi brandingIcon="" class="org.eclipse.mylyn.ditz.ui.DitzRepositoryConnectorUi" id="ditz" name="Ditz" overlayIcon="">
+      </connectorUi>
    </extension>
    <extension
          point="org.eclipse.mylyn.tasks.ui.taskRepositoryPageContribution">
@@ -24,5 +26,4 @@
             urlRepository="test">
       </repository>
    </extension>
-
 </plugin>

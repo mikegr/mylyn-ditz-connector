@@ -10,38 +10,36 @@ import org.eclipse.mylyn.tasks.ui.wizards.ITaskRepositoryPage;
 
 public class DitzRepositoryConnectorUi extends AbstractRepositoryConnectorUi {
 
-	public DitzRepositoryConnectorUi() {
-		// TODO Auto-generated constructor stub
-	}
+  public DitzRepositoryConnectorUi() {
+    // TODO Auto-generated constructor stub
+  }
 
-	@Override
-	public String getConnectorKind() {
-		return "ditz";
-	}
+  @Override
+  public String getConnectorKind() {
+    return "ditz";
+  }
 
-	@Override
-	public IWizard getNewTaskWizard(TaskRepository taskRepository,
-			ITaskMapping selection) {
-		Wizard w = new DitzNewTaskWizard();
-		return w;
-	}
+  @Override
+  public IWizard getNewTaskWizard(TaskRepository taskRepository, ITaskMapping selection) {
+    Wizard w = new DitzNewTaskWizard();
+    return w;
+  }
 
-	@Override
-	public IWizard getQueryWizard(TaskRepository taskRepository,
-			IRepositoryQuery queryToEdit) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+  @Override
+  public IWizard getQueryWizard(TaskRepository taskRepository, IRepositoryQuery queryToEdit) {
+    // TODO Auto-generated method stub
+    return null;
+  }
 
-	@Override
-	public ITaskRepositoryPage getSettingsPage(TaskRepository taskRepository) {
-		return null;
-	}
+  @Override
+  public ITaskRepositoryPage getSettingsPage(TaskRepository taskRepository) {
+    return new DitzRepositorySettingsPage();
+  }
 
-	@Override
-	public boolean hasSearchPage() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+  @Override
+  public boolean hasSearchPage() {
+    // TODO Auto-generated method stub
+    return false;
+  }
 
 }
