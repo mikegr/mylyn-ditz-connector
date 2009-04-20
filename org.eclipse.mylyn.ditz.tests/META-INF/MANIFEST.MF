@@ -6,8 +6,8 @@ Bundle-Version: 1.0.0
 Bundle-Activator: org.eclipse.mylyn.ditz.tests.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.junit4;bundle-version="4.3.1",
- org.eclipse.mylyn.tasks.core;bundle-version="3.1.1",
+ org.junit4;bundle-version="4.3",
+ org.eclipse.mylyn.tasks.core;bundle-version="3.1",
  org.eclipse.mylyn.ditz.core;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.5

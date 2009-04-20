@@ -17,8 +17,9 @@ Require-Bundle: org.eclipse.mylyn;bundle-version="3.1.1",
  org.eclipse.mylyn.tasks.bugs.source;bundle-version="3.1.1",
  org.eclipse.mylyn.tasks.core.source;bundle-version="3.1.1",
  org.eclipse.mylyn.tasks.ui.source;bundle-version="3.1.1",
- org.eclipse.swt;bundle-version="3.4.2",
- org.eclipse.ui;bundle-version="3.4.2"
+ org.eclipse.swt;bundle-version="3.4",
+ org.eclipse.ui;bundle-version="3.4"
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.5
 Export-Package: org.eclipse.mylyn.ditz.core
+Import-Package: org.eclipse.ui.plugin
