@@ -54,8 +54,10 @@ public class DitzRepositoryConnector extends AbstractRepositoryConnector {
 	public TaskData getTaskData(TaskRepository taskRepository, String taskId,
 			IProgressMonitor monitor) throws CoreException {
 		TaskAttributeMapper tam = new TaskAttributeMapper(taskRepository);
-		tam.setValue(new TaskAttribute(null, TaskAttribute.SUMMARY), "Hardcoded summary");
-		return new TaskData(tam, taskRepository.getConnectorKind(), taskRepository.getRepositoryUrl(), taskId);
+		tam.setValue(new TaskAttribute(null, TaskAttribute.SUMMARY),
+				"Hardcoded summary");
+		return new TaskData(tam, taskRepository.getConnectorKind(),
+				taskRepository.getRepositoryUrl(), taskId);
 	}
 
 
@@ -75,8 +77,10 @@ public class DitzRepositoryConnector extends AbstractRepositoryConnector {
 			IRepositoryQuery query, TaskDataCollector collector,
 			ISynchronizationSession session, IProgressMonitor monitor) {
 		TaskAttributeMapper tam = new TaskAttributeMapper(repository);
-		tam.setValue(new TaskAttribute(null, TaskAttribute.SUMMARY), "Hardcoded summary");
-		TaskData data = new TaskData(tam, repository.getConnectorKind(), repository.getRepositoryUrl(), "1");
+		tam.setValue(new TaskAttribute(null, TaskAttribute.SUMMARY),
+				"Hardcoded summary");
+		TaskData data = new TaskData(tam, repository.getConnectorKind(),
+				repository.getRepositoryUrl(), "1");
 		collector.accept(data);
 		return Status.OK_STATUS;
 	}
