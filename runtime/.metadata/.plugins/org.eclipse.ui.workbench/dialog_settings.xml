@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ShowViewDialog">
+		<item value="367" key="DIALOG_WIDTH"/>
+		<item value="org.eclipse.mylyn.tasks.ui.views.repositories" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="88" key="DIALOG_Y_ORIGIN"/>
+		<item value="444" key="DIALOG_HEIGHT"/>
+		<item value="329" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.mylyn.ui"/>
+		</list>
+	</section>
+</section>

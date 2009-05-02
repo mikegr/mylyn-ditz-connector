@@ -8,7 +8,6 @@ public class DitzNewTaskWizard extends Wizard {
 		super();
 	}
 
-
 	DitzNewTaskWizardPage page;
 	@Override
 	public void addPages() {
@@ -18,7 +17,7 @@ public class DitzNewTaskWizard extends Wizard {
 
 	@Override
 	public boolean performFinish() {
-		// TODO Auto-generated method stub
+		// TODO handle page.getUrl();
 		return true;
 	}
 

@@ -27,18 +27,16 @@ public class DitzRepositoryConnectorUi extends AbstractRepositoryConnectorUi {
 
   @Override
   public IWizard getQueryWizard(TaskRepository taskRepository, IRepositoryQuery queryToEdit) {
-    // TODO Auto-generated method stub
-    return null;
+    return new DitzQueryWizard();
   }
 
   @Override
   public ITaskRepositoryPage getSettingsPage(TaskRepository taskRepository) {
-    return new DitzRepositorySettingsPage();
+    return new DitzRepositorySettingsPage("Ditz Mylyn Connector", "Settings for Ditz repository", taskRepository);
   }
 
   @Override
   public boolean hasSearchPage() {
-    // TODO Auto-generated method stub
     return false;
   }
 
