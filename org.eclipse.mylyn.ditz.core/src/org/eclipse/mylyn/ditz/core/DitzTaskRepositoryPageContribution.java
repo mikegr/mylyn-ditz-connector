@@ -11,39 +11,40 @@ import org.eclipse.swt.widgets.Text;
 
 public class DitzTaskRepositoryPageContribution extends AbstractTaskRepositoryPageContribution {
 
-  public DitzTaskRepositoryPageContribution(String title, String description) {
-    super(title, description);
-    // TODO Auto-generated constructor stub
-  }
+	public DitzTaskRepositoryPageContribution(String title, String description) {
+		super(title, description);
+		// TODO Auto-generated constructor stub
+	}
 
-  @Override
-  public void applyTo(TaskRepository repository) {
-    repository.setRepositoryUrl(text.getText());
-  }
+	@Override
+	public void applyTo(TaskRepository repository) {
+		repository.setRepositoryUrl(text.getText());
+	}
 
-  @Override
-  public boolean canFlipToNextPage() {
-    return false;
-  }
+	@Override
+	public boolean canFlipToNextPage() {
+		return false;
+	}
 
-  @Override
-  public boolean isPageComplete() {
-    // TODO Auto-generated method stub
-    return false;
-  }
+	@Override
+	public boolean isPageComplete() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 
-  @Override
-  public IStatus validate() {
-    // TODO Auto-generated method stub
-    return Status.OK_STATUS;
-  }
+	@Override
+	public IStatus validate() {
+		// TODO Auto-generated method stub
+		return Status.OK_STATUS;
+	}
 
-  private Text text;
+	private Text text;
 
-  @Override
-  public Control createControl(Composite parent) {
-    text = new org.eclipse.swt.widgets.Text(parent, SWT.SINGLE);
-    return text;
-  }
+	@Override
+	public Control createControl(Composite parent) {
+		text = new org.eclipse.swt.widgets.Text(parent, SWT.SINGLE);
+		text.setText("hallo");
+		return text;
+	}
 
 }
