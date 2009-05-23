@@ -7,6 +7,10 @@
             class="org.eclipse.mylyn.ditz.ui.DitzRepositoryConnectorUi"
             id="org.eclipse.mylyn.ditz.ui.DitzRepositoryConnectorUi">
       </connectorUi>
+      <connectorCore
+            class="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector"
+            name="org.eclipse.mylyn.ditz.core.DitzRepositoryConnector">
+      </connectorCore>
    </extension>
 
 </plugin>
