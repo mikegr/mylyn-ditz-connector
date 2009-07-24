@@ -1,0 +1,16 @@
+=Install instructions=
+
+[TODO]
+
+Download yamlbeans 0.9.2
+http://yamlbeans.sourceforge.net/
+
+== Roadmap ==
+
+=== Step 1: Reading of project data===
+
+Files:
+*project.yaml
+*.ditz-config and ~/.ditz-config
+
+===Step 2:===
